@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <script src="./js/crud.js" type="module"></script>
+    <title> - CRUD - </title>
+</head>
+<body>
+    <header>
+        <img id="logo" src="./img/logotipo.jpg" alt="Logo">
+        <nav>
+            <ul>
+                <li><a href="./index.html">HOME</a></li>
+                <li><a href="#">MONSTRUOS</a></li>
+                <li><a href="#">BLOG</a></li>
+                <li><a href="#">CONTACTO</a></li>
+              </ul>
+        </nav>
+    </header>
+    <h1>Crud Monstruos</h1>
+    <main>
+        <section class="seccion-formulario">
+            <form>
+                <h2>Información del Monstruo</h2>
+                <label class="negrita" for="txtNombre">Nombre:</label>
+                <input type="text" name="txtNombre" placeholder="Ingrese Nombre" required>
+                <label class="negrita" for="txtAlias"><i class="fa-solid fa-mask"></i> Alias:</label>
+                <input type="text" name="txtAlias" placeholder="Ingrese alter-ego" required>
+                <fieldset>
+                    <legend class="negrita"><i class="fa-solid fa-shield-halved"></i> Defensa:</legend>
+                    <input type="radio" name="rdoDefensa" value="Estaca" checked>Estaca
+                    <br>
+                    <input type="radio" name="rdoDefensa" value="Pocima">Pocima
+                    <br>
+                    <input type="radio" name="rdoDefensa" value="Crucifijo">Crucifijo
+                    <br>
+                    <input type="radio" name="rdoDefensa" value="Plata">Plata
+                    <br>
+                </fieldset>
+                <label class="negrita" for="rangeMiedo"><i class="fa-solid fa-ghost"></i> Miedo:</label>
+                <input type="range" name="rangeMiedo">
+                <label for="selectTipo" class="negrita" ><i class="fa-solid fa-skull"></i> Tipo:</label>
+                <select name="selectTipo" id="selectTipo">
+                </select>
+                <input type="hidden" name="txtId">
+                
+                <button class="boton-guardar" type="submit"><i class="fas fa-save"></i>Guardar</button>
+
+
+                <input type="button" class="ocultar" value="Eliminar" id="eliminar"></button>
+                <input type="button" class="ocultar" value="Cancelar" id="cancelar"></button>
+                
+            </form>
+        </section>
+    </section>
+    <section class="seccion-tabla">
+        <img src="./img/dance-hyper-dance.gif" alt="" id="spinner" width="50px">
+        <div id="tabla"></div>
+    </section>
+    </main>
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="./index.html">HOME</a></li>
+                <li><a href="#">MONSTRUOS</a></li>
+                <li><a href="#">BLOG</a></li>
+                <li><a href="#">CONTACTO</a></li>
+              </ul>
+        </nav>  
+        <p>Laboratorio III - Todos los Derechos Reservados 2023 &copy;</p>
+    </footer>
+</body>
+</html>
